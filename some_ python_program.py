@@ -87,7 +87,7 @@ button_divide =  Button(root, text="/", padx=40, pady=20, command=lambda: button
 # Document what the following lines of code do here
 
 # The code below shows, organization within the GUI application, their positioning can be altered if a coder is not satifated with the look by adjusting the rows and columns
-# The code mentions 'grid' which helps with organzing but in a grid form starting at zero
+# The code mentions 'grid' which helps with organizing but in a grid form starting at zero
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
 button_3.grid(row=3, column=2)
