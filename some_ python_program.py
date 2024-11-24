@@ -1,14 +1,15 @@
 # This program involves a calculator that displays a GUI for easier user interaction
 # Updated on:11/24/2024
 # Updated by:James, David
-#
-#
+
+
 # Document what the following lines of code do here
-from tkinter import *  # Imports all classes and functions from the tkinter library for creating GUI applications
-
-root = Tk()  # Creates a main window (root) for the GUI
-
-root.title("Simple Calculator")  # Sets the title of the main window to "Simple Calculator"
+# Imports all classes and functions from the tkinter library for creating GUI applications
+from tkinter import * 
+# Creates a main window (root) for the GUI
+root = Tk()
+# Sets the title of the main window to "Simple Calculator"
+root.title("Simple Calculator")
 
 # Document what the following lines of code do here
 e = Entry(root, width=35, borderwidth=5)  # Creates an input field (Entry widget) in the root window
