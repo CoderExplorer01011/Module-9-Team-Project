@@ -1,4 +1,4 @@
-# Program description goes here
+# This program involves a calculator that displays a GUI for easier user interaction
 # Updated on:11/24/2024
 # Updated by:James, David
 #
