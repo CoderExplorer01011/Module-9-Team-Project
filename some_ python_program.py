@@ -1,6 +1,6 @@
 # This program involves a calculator that displays a GUI for easier user interaction
-# Updated on:11/24/2024
-# Updated by:James, David
+# Updated on: 11/24/2024
+# Updated by: James, David R
 
 
 # Document what the following lines of code do here
@@ -50,7 +50,7 @@ def button_equal():  # Defines a function that calculates the result when "=" is
         e.insert(0, "Invalid!!!")  # Displays an error message
 
 # Document what the following lines of code do here
-#
+
 # NOTE: We did not cover Lambda functions in class. A Lambda Function 
 # in Python programming is an anonymous function
 # or a function having no name. It is a small and restricted function 
@@ -72,18 +72,26 @@ button_0 =  Button(root, text="0", padx=40, pady=20, command=lambda: button_clic
 button_add =  Button(root, text="+", padx=39, pady=20, command=lambda: button_operator("+"))  # Creates a button labeled "+" and links it to the button_operator function
 button_equal =  Button(root, text="   =   ", padx=79, pady=20, command=button_equal)  # Creates a button labeled "=" and links it to the button_equal function
 button_clear =  Button(root, text="Clear", padx=79, pady=20, command=button_clear)  # Creates a button labeled "Clear" and links it to the button_clear function
-# Document what the following lines of code do here
 
+# Document what the following lines of code do here
 # See the description of a Lambda function above
+
+# The lines of code provided, show up in the GUI application, if not included it wouldn't show up and defeat the purpose of a calculator
 button_subtract =  Button(root, text="-", padx=40, pady=20, command=lambda: button_operator("-"))
+# This line of code creates a button for subtraction, links it to 'button_operator'
 button_multiply =  Button(root, text="*", padx=40, pady=20, command=lambda: button_operator("*"))
+# This line of code creates a button for multiplication, links it to 'button_operator'
 button_divide =  Button(root, text="/", padx=40, pady=20, command=lambda: button_operator("/"))
+# This line of code creates a button for division, links it to 'button_operator'
 
 # Document what the following lines of code do here
 
+# The code below shows, organization within the GUI application, their positioning can be altered if a coder is not satifated with the look by adjusting the rows and columns
+# The code mentions 'grid' which helps with organzing but in a grid form starting at zero
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
 button_3.grid(row=3, column=2)
+
 
 button_4.grid(row=2, column=0)
 button_5.grid(row=2, column=1)
@@ -93,15 +101,18 @@ button_7.grid(row=1, column=0)
 button_8.grid(row=1, column=1)
 button_9.grid(row=1, column=2)
 
+
 button_0.grid(row=4, column=0)
 button_add.grid(row=5, column=0)
 button_equal.grid(row=5, column=1, columnspan=2)
 button_clear.grid(row=4, column=1, columnspan=2)
 
+
 button_subtract.grid(row=6, column=0)
 button_multiply.grid(row=6, column=1)
 button_divide.grid(row=6, column=2)
 
-# Document what the following line of code do here
 
+# Document what the following line of code do here
+# This line of code keeps the application running until the user closes the application
 root.mainloop()
